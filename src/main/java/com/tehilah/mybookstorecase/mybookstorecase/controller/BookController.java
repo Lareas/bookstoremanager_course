@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/books")
 public class BookController {
 
-    @ApiOperation("Retorna exemplo de 'Hello, World, com Travis CI e Heroku!'")
+    @ApiOperation("Retorna exemplo de 'Hello, World, com Travis CI, Heroku e PR!'")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success method return")
     })
