@@ -5,7 +5,7 @@ jdk: openjdk14
 install: true
 addons:
   sonarcloud:
-    organization: Lareas
+    organization: Luiz Fernando Areas
     token: 44ce8874b5f45506de8a0e781a1656ae629ce6a7
 script:
   - mvn clean package sonar:sonar -P sonar
