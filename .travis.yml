@@ -5,8 +5,8 @@ jdk: openjdk14
 install: true
 addons:
   sonarcloud:
-    organization: Lareas
-    token: 44ce8874b5f45506de8a0e781a1656ae629ce6a7
+    organization: $SONAR_ORGANIZATION
+    token: $SONAR_TOKEN
 script:
   - mvn clean package sonar:sonar -P sonar
 cache:
@@ -15,4 +15,5 @@ cache:
     - $home/.sonar/cache
 before_install:
   - chmod +x mvnw
-
+before_script:
+  - chmod +x mvnw
