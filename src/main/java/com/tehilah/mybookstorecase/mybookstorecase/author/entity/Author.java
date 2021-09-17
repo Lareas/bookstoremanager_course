@@ -1,6 +1,7 @@
 package com.tehilah.mybookstorecase.mybookstorecase.author.entity;
 
 import com.tehilah.mybookstorecase.mybookstorecase.books.entity.Book;
+import com.tehilah.mybookstorecase.mybookstorecase.entity.Auditable;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -8,7 +9,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class Author {
+public class Author extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
